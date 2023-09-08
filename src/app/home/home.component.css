@@ -1,0 +1,10 @@
+#loginB {
+  width: 20%;
+  height: 8%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xxx-large;
+  border-radius: 40px;
+}
