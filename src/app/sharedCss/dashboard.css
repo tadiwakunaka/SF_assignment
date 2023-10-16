@@ -32,7 +32,7 @@ li a:hover:not(.active) {
   color: white;
 }
 
-#content{
+#content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -42,6 +42,7 @@ li a:hover:not(.active) {
   height: 80%;
   margin-left: 20%;
 }
+
 
 .card {
   /* Add shadows to create the "card" effect */

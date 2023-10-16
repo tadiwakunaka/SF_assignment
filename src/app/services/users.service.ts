@@ -11,8 +11,9 @@ export class UsersService {
 
   constructor(private http: HttpClient,private router: Router) {}
 
-  getData() {
-    return this.http.get<any[]>('assets/user.json')
+  addNewUser(email:any, username:any, password:any)
+  {
+    return this.http.post<any>('http://localhost:3000/api/addUser', { email: email, username: username, password: password });
   }
 
 }

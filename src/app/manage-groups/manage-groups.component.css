@@ -1,0 +1,94 @@
+@import 'src/app/sharedCss/dashboard.css';
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 2%;
+  width: 800px;
+  height: 800px;
+}
+
+.radio-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2%;
+  background-color: rgba(246, 246, 246, 0.84);
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  width: 80%;
+  font-size: xxx-large;
+  margin: 0 auto  ;
+  margin-top: 3%;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #487a3e;
+
+}
+
+.overflow-auto{
+  height: 100%;
+}
+
+.groupCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 15%;
+  max-width: 80%;
+  background: #cbcbcb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  margin: 2% auto 0;
+}
+
+.groupN{
+  font-size: xx-large;
+}
+
+.editB {
+  width: 90%;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.editB .button{
+  font-size: 20px;
+  margin:2px;
+  border-radius: 4px;
+  background-color: rgba(56, 161, 76, 0.89);
+  border: 0;
+  cursor: pointer;
+  transition: 0.15s ease;
+}

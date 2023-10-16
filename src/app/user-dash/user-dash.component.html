@@ -1,8 +1,26 @@
-<h1>USER DASHBOARD</h1>
-<button class="btn btn-primary" routerLink="/home">Home</button>
+
+<ul>
+  <li><a routerLink="/home">Home</a></li>
+  <li><a routerLink="/login">Logout</a></li>
+  <li><a >Delete Account</a></li>
+  <router-outlet name="content"></router-outlet>
+</ul>
+
+
 <div>
-  <button class="btn btn-primary" routerLink="/home">Groups</button>
-  <button class="btn btn-primary" routerLink="/home">Chat</button>
-  <button class="btn btn-primary" routerLink="/home">Logout</button>
-  <button class="btn btn-primary" routerLink="/home">Delete Account</button>
+  <div *ngIf="showCards" id="content">
+    <div class="card" (click)="navigateToRoute('chatUI')" >
+      <img src="" alt="User icon"/>
+      <div class="container">
+        <h1>Chat</h1>
+      </div>
+    </div>
+    <div class="card"  (click)="navigateToRoute('profileUI')" >
+      <img src="" alt="User icon"/>
+      <div class="container">
+        <h1>Manage Profile</h1>
+      </div>
+    </div>
+  </div>
+
 </div>

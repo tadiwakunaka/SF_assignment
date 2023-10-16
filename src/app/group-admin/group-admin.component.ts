@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -7,15 +9,22 @@ import { Router } from '@angular/router';
   templateUrl: './group-admin.component.html',
   styleUrls: ['./group-admin.component.css']
 })
-export class GroupAdminComponent {
-  constructor(private router: Router) {
+export class GroupAdminComponent implements OnInit{
+  constructor(private router: Router,private location:Location) {
   }
+  showCards = true;
 
-  navigateToRoute(route: string) {
-    this.router.navigate([route]);
+  ngOnInit(): void {
+    // console.log('hey')
+    // this.location.subscribe((event) => {
+    //   if (event.type === 'popstate') {
+    //     this.showCards=true
+    //     console.log('enin')
+    //   }
+    // });
   }
-
-
-
+  navigateToRoute(route:any){
+    this.router.navigate([route])
+  }
 
 }

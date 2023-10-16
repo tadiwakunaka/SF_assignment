@@ -1,0 +1,50 @@
+@import 'src/app/sharedCss/dashboard.css';
+
+#card{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 2%;
+  transition: 0.3s;
+  background: #727272;
+  margin-top: 100px;
+  padding: 5%;
+  overflow: auto;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  align-self: flex-start;
+
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+  justify-content: right;
+  align-self: flex-end;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: right;
+  color: #999;
+}
+
+.name{
+  justify-content: left;
+  text-align: left;
+  font-size: xx-large;
+  text-transform: capitalize;
+}

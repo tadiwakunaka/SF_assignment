@@ -11,6 +11,10 @@ import { SuperAdminComponent } from './super-admin/super-admin.component';
 import { FormsModule } from '@angular/forms';
 import { ManageGroupsComponent } from './manage-groups/manage-groups.component';
 import { CreateGroupsComponent } from './create-groups/create-groups.component';
+import { ChatUIComponent } from './chat-ui/chat-ui.component';
+import { ProfileUIComponent } from './profile-ui/profile-ui.component';
+import { ChatBoxComponent } from './chat-box/chat-box.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { CreateGroupsComponent } from './create-groups/create-groups.component';
     GroupAdminComponent,
     SuperAdminComponent,
     ManageGroupsComponent,
-    CreateGroupsComponent
+    CreateGroupsComponent,
+    ChatUIComponent,
+    ProfileUIComponent,
+    ChatBoxComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
