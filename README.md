@@ -1,6 +1,11 @@
 # Assignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Step to run project
+1. npm install
+2. cd server
+3. node server.js
+4. ng serve
 
 ## GitHub Repository Overview
 
