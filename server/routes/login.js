@@ -11,26 +11,33 @@ module.exports = function(db, app) {
     const collection = db.collection('users'); // Accessing the 'users' collection in the database
 
     // Finding the user with the given username and password
-    collection.find({'username': users.username.toString(), 'password': users.password.toString()}).toArray((err, data) => {
+    await collection.find({'username': users.username.toString(), 'password': users.password.toString()}).toArray((err, data) => {
       if (err) {
+        // Handle the error appropriately, possibly with a 500 status code
         console.error(err);
-        return res.status(500).send('Internal Server Error'); // Sending an internal server error status
+        return res.sendStatus(500);
       }
 
-      console.log(data); // Logging the retrieved data from the query
-      var user = {}; // Initializing an empty user object
-
-      // Checking if data exists for the user
-      if (data.length > 0) {
-        user = data[0];
-      } else {
-        console.log("no data");
+      var user = {};
+      if (data.length !== 0){
+        user.id = data[0].id;
+        user.email = data[0].email;
+        user.username = data[0].username;
+        user.valid = true;
+        user.groups = data[0].groups;
+        user.groupAdmin  = data[0].groupAdmin;
+        user.superAdmin = data[0].superAdmin;
+        user.bannedFrom = data[0].bannedFrom;
+        user.avatar = data[0].avatar;
+      }else{
         user.valid = false;
       }
-      res.send(user); // Sending the user data in the response
+      // Sending the user data in the response
+      res.send(user);
     });
   });
 };
+
 
 
 

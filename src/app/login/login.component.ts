@@ -25,13 +25,17 @@ export class LoginComponent {
       console.log("no input");
     } else {
       // Calling the login service with provided username and password
-      this.authService.login(this.username, this.password).subscribe((data) => {
-        this.users.push(data);
-        console.log("loggedIn", this.users);
-      });
+      this.authService.login(this.username,this.password).subscribe({
+        next:
+          (data)=>{
+            console.log(data);
+          }
+      })
     }
   }
 }
+
+
 
 
 

@@ -11,6 +11,15 @@ const ObjectId = require('mongodb').ObjectId;
 // Enable Cross-Origin Resource Sharing (CORS) and JSON parsing
 app.use(cors());
 app.use(bodyParser.json());
+const io = require('socket.io')(http,{
+  cors: {
+    origin: "http://localhost:4200",
+    methods: ["GET", "POST"],
+  }
+})
+
+const sockets = require('./socket.js')
+
 
 // MongoDB connection setup
 const url = "mongodb://localhost:27017/";
