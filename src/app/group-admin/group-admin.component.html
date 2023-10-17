@@ -1,37 +1,34 @@
-<ul>
-  <li><a routerLink="/home">Home</a></li>
-  <li><a routerLink="/login">Logout</a></li>
-  <li><a >Delete Account</a></li>
-</ul>
+<div id="page">
+  <ul>
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/login">Logout</a></li>
+    <li><a >Delete Account</a></li>
+  </ul>
 
-<div>
-  <div id="content">
+
+  <div id="content" >
     <div class="card"  (click)="navigateToRoute('createGroup')" >
-      <img src="" alt="User icon"/>
+      <img src="./assets/people.png" alt="User icon"/>
       <div class="container">
-        <h1>Create Group</h1>
-      </div>
-    </div>
-    <div class="card"  (click)="navigateToRoute('manageGroups')" >
-      <img src="" alt="User icon"/>
-      <div class="container">
-        <h1>Manage Groups</h1>
+        <h1>Create Groups & Channels</h1>
       </div>
     </div>
     <div class="card" (click)="navigateToRoute('chatUI')" >
-      <img src="" alt="User icon"/>
+      <img src="./assets/team-management.png" alt="User icon"/>
       <div class="container">
         <h1>Manage Groups</h1>
       </div>
     </div>
     <div class="card"  (click)="navigateToRoute('profileUI')" >
-      <img src="" alt="User icon"/>
+      <img src="./assets/user-profile.png" alt="User icon"/>
       <div class="container">
         <h1>Manage Profile</h1>
       </div>
     </div>
+
   </div>
 
 </div>
+
 
 

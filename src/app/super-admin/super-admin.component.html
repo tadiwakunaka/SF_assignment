@@ -1,41 +1,38 @@
-<ul>
-  <li><a routerLink="/home">Home</a></li>
-  <li><a routerLink="/login">Logout</a></li>
-  <li><a >Delete Account</a></li>
-</ul>
+<div id="page">
+  <ul>
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/login">Logout</a></li>
+    <li><a >Delete Account</a></li>
+  </ul>
 
-<div>
-  <div *ngIf="showCards" id="content">
-    <div class="card"  (click)="navigateToRouteSecondary('createGroup')" >
-      <img src="" alt="User icon"/>
+
+  <div id="content" >
+
+    <div class="card"   >
+      <img src="./assets/people.png" alt="User icon"/>
       <div class="container">
-        <h1>Create Group</h1>
+        <h1>Create Groups & Channels</h1>
       </div>
     </div>
-    <div class="card"  (click)="navigateToRouteSecondary('manageGroups')" >
-      <img src="" alt="User icon"/>
-      <div class="container">
-        <h1>Manage Groups</h1>
-      </div>
-    </div>
-    <div class="card" (click)="navigateToRouteSecondary('chatUI')" >
-      <img src="" alt="User icon"/>
+    <div class="card"   >
+      <img src="./assets/team-management.png" alt="User icon"/>
       <div class="container">
         <h1>Manage Groups</h1>
       </div>
     </div>
-    <div class="card"  (click)="navigateToRouteSecondary('profileUI')" >
-      <img src="" alt="User icon"/>
-      <div class="container">
-        <h1>Manage Profile</h1>
-      </div>
-    </div>
-    <div class="card"  (click)="navigateToRouteSecondary('profileUI')" >
-      <img src="" alt="User icon"/>
+    <div class="card"  >
+      <img src="./assets/man.png" alt="User icon"/>
       <div class="container">
         <h1>Manage Users</h1>
       </div>
     </div>
+    <div class="card"   >
+      <img src="./assets/user-profile.png" alt="User icon"/>
+      <div class="container">
+        <h1>Manage Profile</h1>
+      </div>
+    </div>
+
   </div>
 
 </div>

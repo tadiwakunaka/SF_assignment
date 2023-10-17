@@ -1,6 +1,8 @@
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import {UsersService} from "../services/users.service";
+import { LoginAuthService } from '../services/login-auth.service';
+import { User } from '../services/usrData';
 
 @Component({
   selector: 'app-login',
@@ -8,16 +10,34 @@ import {UsersService} from "../services/users.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  data: any[];
-
+  users: User[] = [];
   username: string = '';
   password: string = '';
 
-  constructor(private router: Router, private userService: UsersService) {
-    this.data = []
+  // Constructor with dependency injection for necessary services
+  constructor(private authService: LoginAuthService, private router: Router) {}
+
+  // Function to handle user login
+  signin(event: any) {
+    console.log("at signin");
+    event.preventDefault(); // Preventing default form submission behavior
+    if (this.username == "" || this.password == "") {
+      console.log("no input");
+    } else {
+      // Calling the login service with provided username and password
+      this.authService.login(this.username, this.password).subscribe((data) => {
+        this.users.push(data);
+        console.log("loggedIn", this.users);
+      });
+    }
   }
-
-
-
-
 }
+
+
+
+
+
+
+
+
+

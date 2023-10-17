@@ -7,6 +7,7 @@
   margin: 2%;
   width: 800px;
   height: 800px;
+  background: rgba(140, 140, 140, 0.78);
 }
 
 .radio-inputs {
@@ -16,7 +17,6 @@
   text-align: center;
   justify-content: center;
   border-radius: 2%;
-  background-color: rgba(246, 246, 246, 0.84);
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   width: 80%;
@@ -42,12 +42,12 @@
   border-radius: 0.5rem;
   border: none;
   padding: .5rem 0;
-  color: rgba(51, 65, 85, 1);
+  color: rgb(245, 245, 245);
   transition: all .15s ease-in-out;
 }
 
 .radio-inputs .radio input:checked + .name {
-  background-color: #487a3e;
+  background-color: #151515;
   font-weight: 600;
 }
 
@@ -70,11 +70,11 @@
 
 
 .img {
-  flex-grow: 0.8;
+  flex-grow: 0.7;
   margin: 2%;
-  height: 90%;
+  height: 70%;
   border-radius: 50%;
-  background: black;
+  background-color: #555555;
 }
 
 
@@ -92,7 +92,7 @@
 }
 
 #recentM{
-  color: #487a3e;
+  color: black;
   font-style: italic;
 }
 

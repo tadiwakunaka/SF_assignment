@@ -1,5 +1,11 @@
+#page{
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  height: 100vh;
+}
+
 body {
   margin: 0;
+
 }
 
 ul {
@@ -7,23 +13,24 @@ ul {
   margin: 0;
   padding: 0;
   width: 15%;
-  background-color: #f1f1f1;
+  background-color: rgba(49, 49, 49, 0.73);
   position: fixed;
   height: 100%;
   overflow: auto;
   font-size: xx-large;
+
 }
 
 li a {
   display: block;
-  color: #000;
+  color: white;
   padding: 8px 16px;
   text-decoration: none;
 
 }
 
 li a.active {
-  background-color: #2a2a2a;
+  background-color: #b4b4b4;
   color: white;
 }
 
@@ -41,6 +48,7 @@ li a:hover:not(.active) {
   width: 80%;
   height: 80%;
   margin-left: 20%;
+
 }
 
 
@@ -54,7 +62,10 @@ li a:hover:not(.active) {
 }
 
 .card img{
-  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 55%;
+  width: 55%;
 }
 
 /* On mouse-over, add a deeper shadow */

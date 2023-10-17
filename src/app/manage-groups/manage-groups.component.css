@@ -43,12 +43,12 @@
   border-radius: 0.5rem;
   border: none;
   padding: .5rem 0;
-  color: rgba(51, 65, 85, 1);
+  color: rgb(0, 0, 0);
   transition: all .15s ease-in-out;
 }
 
 .radio-inputs .radio input:checked + .name {
-  background-color: #487a3e;
+  background-color: #6c6c6c;
 
 }
 
@@ -87,7 +87,7 @@
   font-size: 20px;
   margin:2px;
   border-radius: 4px;
-  background-color: rgba(56, 161, 76, 0.89);
+  background-color: rgba(93, 93, 93, 0.89);
   border: 0;
   cursor: pointer;
   transition: 0.15s ease;
